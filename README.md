@@ -84,5 +84,8 @@ your-wiki/
 ## 依赖
 
 - [Claude Code](https://claude.ai/code)
+- [Obsidian](https://obsidian.md) — 知识图谱可视化、wiki-link 双向链接、页面浏览
 - [markitdown](https://github.com/microsoft/markitdown) — 文档格式转换（`/wiki-init` 自动安装）
 - Python 3 — markitdown 运行时需要
+
+> 所有沉淀的知识页面使用 Obsidian wiki-link 语法（`[[页面名]]`），在 Obsidian 中打开即可看到知识图谱和双向链接。
