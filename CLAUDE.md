@@ -202,7 +202,7 @@ tags: []
 1. 检查 source/ 中的文件
 2. 非 .md 文件 → 调用 markitdown 转换（见下方工具规范）
    - 已是 .md/.markdown/.txt → 直接移动到 raw/
-   - 转换成功 → .md 放入 raw/，删除 source/ 中的原始文件
+   - 转换成功 → .md 放入 raw/，保留 source/ 中的原始文件（方便用户阅读原版）
 3. 创建 `learning/[文档名]/notes/` 目录
 4. 启动 sub-agent 并行读取 raw/ 中的资料（见下方策略）
 5. 汇总所有 agent 产出 → 生成 `learning/[文档名]/骨架.md`

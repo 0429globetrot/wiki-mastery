@@ -8,7 +8,7 @@
 - wiki-init 初始化命令（环境安装 + 知识地图配置）
 - 完整的 wiki 项目目录结构和模板
 
-## v0.0.2 — 降低 Obsidian 依赖
+## v0.2.0 — 降低 Obsidian 依赖
 
 - [ ] **Quartz 集成** — 用 Quartz 生成静态站点，在浏览器中查看知识图谱和双向链接
 - [ ] **自动检测** — `/wiki-init` 检测是否安装 Obsidian，没有则自动配置 Quartz

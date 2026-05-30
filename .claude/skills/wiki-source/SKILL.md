@@ -25,8 +25,8 @@ description: "重量资料导入：将 source/ 中的文件转为 markdown，然
      ```bash
      bash .claude/scripts/markitdown-convert.sh "文件路径" "raw/输出文件名.md"
      ```
-   - 转换成功后删除 source/ 中的原始文件
-   - 如果转换失败，报告错误但不删除原始文件
+   - 转换成功后保留 source/ 中的原始文件（PDF 等方便用户直接阅读原版）
+   - 如果转换失败，报告错误
 4. 确认 raw/ 中有新的 .md 文件
 
 ### 第二步：并行读取生成骨架
