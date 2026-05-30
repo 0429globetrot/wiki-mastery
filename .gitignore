@@ -1,0 +1,6 @@
+# markitdown venv（用户安装后产生）
+.claude/scripts/.venv/
+.claude/scripts/markitdown/
+
+# macOS
+.DS_Store
