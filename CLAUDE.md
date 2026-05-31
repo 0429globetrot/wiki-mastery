@@ -201,8 +201,8 @@ tags: []
 **执行流程：**
 1. 检查 source/ 中的文件
 2. 非 .md 文件 → 调用 markitdown 转换（见下方工具规范）
-   - 已是 .md/.markdown/.txt → 直接移动到 raw/
-   - 转换成功 → .md 放入 raw/，保留 source/ 中的原始文件（方便用户阅读原版）
+   - 已是 .md/.markdown/.txt → 直接复制到 raw/
+   - 转换成功 → .md 放入 raw/，保留 source/ 中的原始文件（用户自行学习用）
 3. 创建 `learning/[文档名]/notes/` 目录
 4. 启动 sub-agent 并行读取 raw/ 中的资料（见下方策略）
 5. 汇总所有 agent 产出 → 生成 `learning/[文档名]/骨架.md`
@@ -331,8 +331,8 @@ tags: []
 
 - 调用方式：`bash .claude/scripts/markitdown-convert.sh "输入文件" "输出文件"`
 - 判断逻辑：
-  - 扩展名为 .md / .markdown / .txt → 直接移动到 raw/
-  - 其他格式 → markitdown 转换后放 raw/，删除 source/ 中原始文件
+  - 扩展名为 .md / .markdown / .txt → 直接复制到 raw/
+  - 其他格式 → markitdown 转换后放 raw/，保留 source/ 中原始文件（用户学习用）
 - 支持的格式：pdf, docx, pptx, xlsx, epub, html, csv, json 等
 
 ## 跨资料知识关联机制
